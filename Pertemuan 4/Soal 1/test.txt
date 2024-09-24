@@ -1,2 +1,1 @@
-Input: <input_number>
-Output: <expected_sum>
+
