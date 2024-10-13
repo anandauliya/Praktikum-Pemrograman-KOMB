@@ -1,23 +1,15 @@
-# Variables
-CXX = g++
-CXXFLAGS = -Wall
-TARGET = Soal12
-SRC = Soal12.cpp
+# Target to compile the C++ program
+soal_1 : Soal12.o
+	g++ Soal12.o -o Soal12
 
-# Default target: compile the program
-all: $(TARGET)
+# Target to compile the object file
+soal_1.o : Soal12.cpp
+	g++ -c Soal12.cpp -o Soal12.o
 
-# Compile the multiplication.cpp
-$(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+# Target to run the program
+run : Soal12
+	./Soal12
 
-# Run the program in test mode (using test.txt)
-test: $(TARGET)
-	./$(TARGET) test
-
-# Clean up the compiled files
-clean:
-	rm -f $(TARGET)
-
-# Phony targets to avoid conflicts
-.PHONY: all clean test
+# Target to clean up compiled files
+clean :
+	rm -f Soal12.o Soal12
