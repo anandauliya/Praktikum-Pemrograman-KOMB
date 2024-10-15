@@ -6,8 +6,8 @@ soal_1 : Soal12.o
 soal_1.o : Soal12.cpp
 	g++ -c Soal12.cpp -o Soal12.o
 
-# Target to run the program
-run : Soal12
+# Target to test the program
+test : Soal12
 	./Soal12
 
 # Target to clean up compiled files
