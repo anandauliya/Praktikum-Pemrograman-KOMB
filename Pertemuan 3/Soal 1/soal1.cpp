@@ -3,19 +3,17 @@
 using namespace std;
 
 int main() {
-	double a,b,c;
+	double a = 1;
+	double b = -6;
+	double c = 9;
+	
 	double diskriminan, x1, x2;
 	
-	cout << "Masukkan nilai a: ";
-	cin >> a;
-	
-	cout << "Masukkan nilai b: ";
-	cin >> b;
-	
-	cout << "Masukkan nilai c: ";
-	cin >> c;
-		
 	diskriminan = b*b - 4*a*c;
+	
+	string expected_output_1 = "Akar real yang sama";
+    double expected_output_2 = 3;
+
 	
 	if (diskriminan > 0){
 		x1 = (-b + sqrt(diskriminan))/(2*a);
@@ -28,6 +26,11 @@ int main() {
 		x1 = -b/(2*a);
 		cout << "Akar real yang sama" << endl;
 		cout << "Akar: " << x1 << endl;	
+		if ("Akar real yang sama" == expected_output_1 && x1 == expected_output_2) {
+            cout << "Test Passed" << endl;
+        } else {
+            cout << "Test Failed" << endl;
+        }
 }
 	else if (diskriminan < 0){
 		cout << "Tidak memiliki akar real" << endl;
