@@ -1,16 +1,11 @@
 #include <iostream>
 using namespace std;
 int main (){
-	int a, b, c, terbesar, tengah, terkecil;
+	int terbesar, tengah, terkecil;
 	
-	cout << "Inputkan bilangan 1: ";
-	cin >> a;
-	
-	cout << "Inputkan bilangan 2: ";
-	cin >> b;
-	
-	cout << "Inputkan bilangan 3: ";
-	cin >> c;
+	int a = 15;
+	int b = 7;
+	int c = 22;
 	
 	if (a > b && a > c)	{
 		terbesar = a;
@@ -57,23 +52,17 @@ else {
 		}
 	}
 	
-	cout << "Bilangan dari yang terkecil ke terbesar ";
-	switch (terkecil) {
-		case 1 ... 999999:
-			cout << terkecil << " ";
-			break;
-	}
-	
-	switch (tengah) {
-		case 1 ... 999999:
-			cout << tengah << " ";
-			break;
-	}
-	
-	switch (terbesar) {
-		case 1 ... 999999:
-			cout << terbesar << endl;
-			break;
-	}
+	cout << "Bilangan dari yang terkecil ke terbesar: " 
+         << terkecil << ", " << tengah << ", " << terbesar << endl;
+ 
+    int expected_terbesar = 22;
+    int expected_terkecil = 7;
+    int expected_tengah = 15;
+
+    if (terbesar == expected_terbesar && terkecil == expected_terkecil && tengah == expected_tengah) {
+        cout << "Test Passed" << endl;
+    } else {
+        cout << "Test Failed" << endl;
+    }
 	return 0;
 }
