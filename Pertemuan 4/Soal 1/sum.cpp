@@ -10,10 +10,10 @@ int main(){
 	int input = 5;
 	int expected_output = 15;
 	if (expected_output){
-		cout << "Test Passed";
+		cout << "Test Passed"<<endl;
 	}
 		else {
-			cout <<"Test Failed";
+			cout <<"Test Failed"<<endl;
 		}
 	
 	return 0;
