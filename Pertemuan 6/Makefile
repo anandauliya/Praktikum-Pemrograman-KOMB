@@ -6,8 +6,8 @@ soal_1 : barang.o
 soal_1.o : barang.cpp
 	g++ -c barang.cpp -o barang.o
 
-# Target to run the program
-run : barang
+# Target to test the program
+test : barang
 	./barang
 
 # Target to clean up compiled files
