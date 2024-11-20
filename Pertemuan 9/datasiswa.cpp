@@ -138,6 +138,8 @@ int main() {
         int foundIndex = binarysearchbyNISN(data, targetNISN);
         if (foundIndex != -1) {
             cout << "Siswa dengan NISN " << targetNISN << " ditemukan: " << data[foundIndex].Nama << endl;
+            cout << "Nilai: " << data[foundIndex].Nilai << endl;
+            cout << endl;
         } else {
             cout << "Siswa dengan NISN " << targetNISN << " tidak ditemukan.\n";
         }
