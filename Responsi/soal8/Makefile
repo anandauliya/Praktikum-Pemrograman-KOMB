@@ -1,13 +1,13 @@
 # Variables
 CXX = g++
 CXXFLAGS = -Wall
-TARGET = no8
-SRC = no8.cpp
+TARGET = soal8
+SRC = soal8.cpp
 
 # Default target: compile the program
 all: $(TARGET)
 
-# Compile the no8.cpp
+# Compile the soal8.cpp
 $(TARGET): $(SRC)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
 
